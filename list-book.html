@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List a Book | Campus Book Exchange</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="logo" href="index.html">Campus<span>Books</span></a>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="books.html">Browse Books</a>
+                <a class="active" href="list-book.html">List a Book</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <section class="page-banner">
+            <p class="eyebrow">PASS IT FORWARD</p>
+            <h1>Share a Book with Your Campus</h1>
+            <p>Fill in the details below to create a book listing.</p>
+        </section>
+
+        <section class="form-panel">
+            <div class="form-heading-row">
+                <h2 id="formHeading">Create Your Book Listing</h2>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-small"
+                        id="changeHeadingBtn">Change Heading Size</button>
+                    <button type="button" class="btn btn-outline btn-small"
+                        id="toggleFormBtn">Hide Form</button>
+                </div>
+            </div>
+
+            <form id="bookForm" novalidate>
+                <div class="form-group">
+                    <label for="studentName">Student Name</label>
+                    <input type="text" id="studentName"
+                        placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newBookTitle">Book Title</label>
+                    <input type="text" id="newBookTitle"
+                        placeholder="Enter the book title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="authorName">Author</label>
+                    <input type="text" id="authorName"
+                        placeholder="Enter the author's name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookCategory">Subject / Category</label>
+                    <select id="bookCategory" required>
+                        <option value="">Select a category</option>
+                        <option value="Programming">Programming</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Networking">Networking</option>
+                        <option value="Database">Database</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Self-Help">Self-Help</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookCondition">Book Condition</label>
+                    <select id="bookCondition" required>
+                        <option value="">Select condition</option>
+                        <option value="Like New">Like New</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Good">Good</option>
+                        <option value="Acceptable">Acceptable</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn submit-btn">
+                    Submit Listing
+                </button>
+
+                <p id="formMessage" class="message" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Campus Book Exchange. Share knowledge, not just books.</p>
+    </footer>
+</body>
+</html>

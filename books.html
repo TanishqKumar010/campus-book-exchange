@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Books | Campus Book Exchange</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="logo" href="index.html">Campus<span>Books</span></a>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a class="active" href="books.html">Browse Books</a>
+                <a href="list-book.html">List a Book</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <section class="page-banner">
+            <p class="eyebrow">YOUR NEXT READ IS HERE</p>
+            <h1>Browse Available Books</h1>
+            <p>Explore books shared by students in our campus community.</p>
+        </section>
+
+        <section class="search-panel">
+            <h2>Find a Book</h2>
+            <div class="search-row">
+                <input type="text" id="bookTitleInput"
+                    placeholder="Enter a book title..."
+                    aria-label="Book title to display">
+                <button type="button" class="btn" id="showBookBtn">
+                    Show Book
+                </button>
+            </div>
+            <p id="bookSearchResult" class="message" aria-live="polite"></p>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <div>
+                    <h2>Available Collection</h2>
+                    <p>Choose a book and send a request.</p>
+                </div>
+                <button type="button" class="btn btn-outline"
+                    id="changeCardBtn">Highlight First Book</button>
+            </div>
+
+            <div class="book-grid" id="availableBooks">
+                <article class="book-card available-card">
+                    <div class="book-cover cover-purple">
+                        <span>01</span><strong>Python<br>Basics</strong>
+                    </div>
+                    <div class="book-info">
+                        <span class="tag">Programming</span>
+                        <h3>Python Programming</h3>
+                        <p>Author: Eric Matthes</p>
+                        <p>Condition: Very Good</p>
+                        <button type="button" class="btn request-btn">
+                            Mark as Requested
+                        </button>
+                    </div>
+                </article>
+
+                <article class="book-card available-card">
+                    <div class="book-cover cover-blue">
+                        <span>02</span><strong>Computer<br>Networks</strong>
+                    </div>
+                    <div class="book-info">
+                        <span class="tag">Networking</span>
+                        <h3>Computer Networks</h3>
+                        <p>Author: Andrew S. Tanenbaum</p>
+                        <p>Condition: Good</p>
+                        <button type="button" class="btn request-btn">
+                            Mark as Requested
+                        </button>
+                    </div>
+                </article>
+
+                <article class="book-card available-card">
+                    <div class="book-cover cover-orange">
+                        <span>03</span><strong>DBMS</strong>
+                    </div>
+                    <div class="book-info">
+                        <span class="tag">Database</span>
+                        <h3>Database System Concepts</h3>
+                        <p>Author: Abraham Silberschatz</p>
+                        <p>Condition: Like New</p>
+                        <button type="button" class="btn request-btn">
+                            Mark as Requested
+                        </button>
+                    </div>
+                </article>
+
+                <article class="book-card available-card">
+                    <div class="book-cover cover-green">
+                        <span>04</span><strong>Operating<br>Systems</strong>
+                    </div>
+                    <div class="book-info">
+                        <span class="tag">Computer Science</span>
+                        <h3>Operating System Concepts</h3>
+                        <p>Author: Abraham Silberschatz</p>
+                        <p>Condition: Good</p>
+                        <button type="button" class="btn request-btn">
+                            Mark as Requested
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <p id="requestMessage" class="message" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Campus Book Exchange. Share knowledge, not just books.</p>
+    </footer>
+</body>
+</html>

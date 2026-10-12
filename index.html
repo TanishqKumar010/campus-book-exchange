@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Book Exchange | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="logo" href="index.html">Campus<span>Books</span></a>
+            <nav class="navbar">
+                <a class="active" href="index.html">Home</a>
+                <a href="books.html">Browse Books</a>
+                <a href="list-book.html">List a Book</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <p class="eyebrow">READ • SHARE • REPEAT</p>
+            <h1 id="mainHeading">Welcome to Campus Book Exchange!</h1>
+            <p>
+                Give your old books a new home. Discover affordable study
+                materials, exchange books with fellow students, and share
+                the knowledge that brings our campus together.
+            </p>
+            <div class="hero-actions">
+                <a class="btn" href="books.html">Explore Books</a>
+                <a class="btn btn-outline" href="list-book.html">Share a Book</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">START EXPLORING</p>
+                    <h2>Featured Books</h2>
+                    <p>Find your next favourite book from our collection.</p>
+                </div>
+                <button class="btn btn-small" id="toggleBooksBtn"
+                    type="button">Hide Featured Books</button>
+            </div>
+
+            <div class="book-grid" id="featuredBooks">
+                <article class="book-card featured-card">
+                    <div class="book-cover cover-blue">
+                        <span>01</span><strong>Clean<br>Code</strong>
+                    </div>
+                    <div class="book-info">
+                        <span class="tag">Programming</span>
+                        <h3>Clean Code</h3>
+                        <p>Author: Robert C. Martin</p>
+                        <p class="muted">Write better software.</p>
+                    </div>
+                </article>
+
+                <article class="book-card featured-card">
+                    <div class="book-cover cover-orange">
+                        <span>02</span><strong>Atomic<br>Habits</strong>
+                    </div>
+                    <div class="book-info">
+                        <span class="tag">Self-Help</span>
+                        <h3>Atomic Habits</h3>
+                        <p>Author: James Clear</p>
+                        <p class="muted">Small habits, big changes.</p>
+                    </div>
+                </article>
+
+                <article class="book-card featured-card">
+                    <div class="book-cover cover-green">
+                        <span>03</span><strong>Data<br>Structures</strong>
+                    </div>
+                    <div class="book-info">
+                        <span class="tag">Computer Science</span>
+                        <h3>Data Structures</h3>
+                        <p>Author: Seymour Lipschutz</p>
+                        <p class="muted">Build strong CS foundations.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="feature-strip">
+                <div>
+                    <h3>Have books you no longer need?</h3>
+                    <p>Help another student learn while making room on your shelf.</p>
+                </div>
+                <a href="list-book.html" class="btn">List Your Book</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Campus Book Exchange. Share knowledge, not just books.</p>
+    </footer>
+</body>
+</html>
